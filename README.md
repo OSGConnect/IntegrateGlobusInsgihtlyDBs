@@ -1,15 +1,15 @@
 
 This document shows how to add new users to mailchimp and insight.ly via scripts.  The following are the major steps:
 
-(1) Pull all user data from globus 
-(2) Clean the data and fill the relevent fields
-(3) Pull the current data from insight.ly
-(4) Compare globus and insigh.tly to find the users who need to be added to insight.ly
-(5) Clean the new users data with Open Refine package 
-(6) Push the new users data on insight.ly
-(7) Pull the list of contacts specific to connect instances 
-(8) Extract the first, last, and email fields from the insight.ly data 
-(9) Push the csv file on Mailchimp
+*(1) Pull all user data from globus 
+*(2) Clean the data and fill the relevent fields
+*(3) Pull the current data from insight.ly
+*(4) Compare globus and insigh.tly to find the users who need to be added to insight.ly
+*(5) Clean the new users data with Open Refine package 
+*(6) Push the new users data on insight.ly
+*(7) Pull the list of contacts specific to connect instances 
+*(8) Extract the first, last, and email fields from the insight.ly data 
+*(9) Push the csv file on Mailchimp
 
 Now we look into each step in detail. 
 

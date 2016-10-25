@@ -29,7 +29,6 @@ The json file contains the profile information for each user
 
      username : dbala
      custom_fields : {u'first_name': u'Balamurugan', u'last_name': u'Desinghu', u'name': u'Balamuru gan Desinghu', u'country': u'US', u'field_of_science': u'Physics', u'email': u'dmbala@gmail.com', u'phone': u'9196996660', u'department': u'Computation Institute', u'organization': u'University of Chicago', u'nonprofit': True, u'institution': u'University of Chicago'}
-     first_name : Balamurugan
      ...
 
 and also the project information for each user

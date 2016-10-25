@@ -34,9 +34,6 @@ The json file contains the profile information for each user
 and also the project information for each user
 
      username : dbala
-     status : active
-     info : {'url': '/groups/fdb38a24-03c1-11e3-86f7-12313809f035/members/dbala'}
-     role : member
      projects : ['freesurfer', 'duke', 'duke-swcstaff', 'MS-EinDRC', 'HTCC', 'SWC-OSG-IU15', 'ConnectTrain', 'cms', 'swc201412uc', 'duke-SWC-Duke15', 'DelhiWorkshop2015', 'OSG-Staff', 'atlas-org-uchicago', 'atlas', 'uchicago', 'xenon1t', 'atlas-wg-USAtlas-TechSupport', 'osg', 'uchicago-campus', 'UserSchool2016']
      ...
     

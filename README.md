@@ -2,10 +2,10 @@
 This document shows how to add new users to mailchimp and insight.ly via scripts. The following are the major steps:
 
 *     (1) Pull all user data from globus database
-*     (2)  Extract user and project information
+*     (2) Extract user and project information
 *     (3) Pull the current data from insight.ly
 *     (4) Compare the data from globus and insight.ly to find the list of new users
-*     (5)  Clean the new users data with Open Refine package
+*     (5) Clean the new users data with Open Refine package
 *     (6) Push the new users data to insight.ly
 *     (7) Pull the list of contacts from insightly that are specific to connect instances 
 *     (8) Extract the first name, last name, and email fields from the insight.ly database
@@ -49,7 +49,7 @@ During this process, some usernames such as test, jenkins, etc., are filtered ou
        if ('osg' not in lk) and ('connect' not in lk) and ('dgc' not in lk) and ('@' not in lk) and ('test' not in lk) and ('guest' not in lk) and ('fsurf' not in lk) and ('efdisk' not in lk) and ('user' not in lk) and ('jenkins' not in lk) :
 
 
-## (3) Pull the current data from insight.ly
+## (3) Pull the existing contact data from insight.ly
 
 Go to insight.ly database, select the contacts, and then choose the option to export as csv file. You will get an email from insight.ly that provides a link to download the csv file. Click the link and get the zip file. The name of the zip file may sound something like `University_of_Chicago_Export_UJJE0G.zip`. Unzip and you will see a file `Contacts.csv`. Usually, the list of users in Contacts.csv is more than what the list of users in `user_info.csv`, but this is okay. 
 
@@ -67,7 +67,7 @@ Get the list of new users who are not registered on insight.ly database
 
 ## (5)  Clean the new users data with Open Refine package
 
-This step may be discarded if the update of insight.ly database was done in the past few dates. Because `Open Refine` works well if the list of users are in the order of hundreds.  Usually, the new users are in the order of tens for a weekly or bi-weekly basis. 
+This step may be discarded if the update of insight.ly database was done in the past few dates. Because the clearn up of data with  `Open Refine` works well if the list of users are in the order of hundreds.  Usually, the new users are in the order of tens for a weekly or bi-weekly basis. 
 
 ## (6) Push the new users data to insight.ly
 

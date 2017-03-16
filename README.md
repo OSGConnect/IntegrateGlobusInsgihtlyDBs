@@ -1,7 +1,7 @@
 
 This document shows how to add new users to mailchimp and insight.ly via scripts. The following are the major steps:
 
-*     (1) Pull all user data from globus database
+*     (1) Pull user data from globus database
 *     (2) Extract user and project information
 *     (3) Pull the current data from insight.ly
 *     (4) Compare the data from globus and insight.ly to find the list of new users
@@ -10,6 +10,7 @@ This document shows how to add new users to mailchimp and insight.ly via scripts
 *     (7) Pull the list of contacts from insightly that are specific to connect instances 
 *     (8) Extract the first name, last name, and email fields from the insight.ly database
 *     (9) Push the csv file to Mailchimp
+*     (10) Attach the tag "removed-osg-users" for the rejected users in insight.ly 
 
 
 In these steps, the data flows from globus to insight.ly and then to mailchimp. 
@@ -93,5 +94,23 @@ Go to MailChimp, log in, and open the menu `List`. Under the `List` menu, you wi
 
 Select the option `import subscribers` and then check the option `use the settings from last import`. 
 Follow the guidelines during the import process. Shortly after the import completed, you will get an email that summarizes the import. 
+
+## Attach the tag "removed-osg-users" for the rejected users in insight.ly 
+
+Go to globus portal, click connect group. Click on the rejected users. Copy and paste the list of rejected users 
+in a text file "connect_rejected_users.dat"
+
+Import all the users from the insight.ly database. Unzip and get the file "Contacts.csv". 
+
+Now run 
+
+    python find_removed_users_inglobusconnect_oninsightly.py -i1 Contacts.csv -i2 connect_rejected_list.csv > removed_users.csv
+
+Clean up the file "removed_users.csv" and upload on insight.ly. 
+
+
+Go to insight.ly database and manually remove the old labels (osg-connect-users, ...don't go away)
+
+
 
 
